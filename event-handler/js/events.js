@@ -1,9 +1,9 @@
 function transformUppercase(_val){
-    return _val.transformUppercase();
+    return _val.toUppercase();
 }
 
-let elNamePengguna = document.getElementById("namePengguna")
-elNamaPengguna.addEventListener("keyup",function(){
+let elNamaPengguna = document.getElementById("NamePengguna")
+elNamaPengguna.addEventListener("keyup",function();{
     elNamaPengguna.value = transformUppercase(elNamaPengguna.value)
 })
 
@@ -18,5 +18,5 @@ function checkPassword(){
     }
 }
 
-let elKL = document.getElementsByid("kataLaluan")
-elKL.onblue = checkPassword
+let elKL = document.getElementByid("kataLaluan")
+elKL.onblur = checkPassword
