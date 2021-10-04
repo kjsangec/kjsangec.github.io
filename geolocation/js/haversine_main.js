@@ -1,4 +1,4 @@
-function calculateDistance(lat, long){
+function calculateDistances(lat, long){
     let depulze = haversine(lat,long,2.922561,101.650965)
     let pyramid = haversine(lat,long,3.073065,101.607787)
     let klcc = haversine(lat,long,3.158761,101.714524)
