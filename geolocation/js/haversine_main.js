@@ -1,7 +1,7 @@
-function calculateDistances(lat, long){
-    let depulze = haversine(lat,long,2.922561,101.650965)
-    let pyramid = haversine(lat,long,3.073065,101.607787)
-    let klcc = haversine(lat,long,3.158761,101.714524)
+function calculateDistances(lat, lon){
+    let depulze = haversine(lat,lon,2.922561,101.650965)
+    let pyramid = haversine(lat,lon,3.073065,101.607787)
+    let klcc = haversine(lat,lon,3.158761,101.714524)
 
     return [depulze,pyramid,klcc]
 }
@@ -23,9 +23,9 @@ elLocate.addEventListener("click", function(){
 
             elLat.innerHTML = "Your latitude: " + userLat
             elLong.innerHTML = "Your longtitude: " + userLong
-            elDpluze.innerHTML = "Distance to Dpluze, Cyberjaya is " + distance[0] + "km"
-            elKlcc.innerHTML = "Distance to KLCC is " + distance[2] + "km"
-            elSunway.innerHTML = "Distance to Sunway Pyramid is " + distance[1] + "km" 
+            elDpluze.innerHTML = "Distance to Dpluze, Cyberjaya is " + distances[0] + "km"
+            elKlcc.innerHTML = "Distance to KLCC is " + distances[2] + "km"
+            elSunway.innerHTML = "Distance to Sunway Pyramid is " + distances[1] + "km" 
         })
 
     } else {
