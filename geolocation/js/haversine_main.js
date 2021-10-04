@@ -19,7 +19,7 @@ elLocate.addEventListener("click", function(){
             let userLat = postion.coords.latitude
             let userLong = postion.coords.longitude
 
-            let distance = calculateDistance(userLat, userLong)
+            let distance = calculateDistances(userLat, userLong)
 
             elLat.innerHTML = "Your latitude: " + userLat
             elLong.innerHTML = "Your longtitude: " + userLong
